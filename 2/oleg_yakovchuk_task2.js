@@ -47,11 +47,11 @@ var myVar = createVar('string');
 /*
 1. Create a function called celsiusToFahrenheit:
           Store a celsius temperature into a variable.
-          Convert it to fahrenheit and output "NN캜 is NN캟".
+          Convert it to fahrenheit and output "NN째C is NN째F".
  
 2. Create a function called fahrenheitToCelsius:
           Now store a fahrenheit temperature into a variable.
-   Convert it to celsius and output "NN캟 is NN캜."
+   Convert it to celsius and output "NN째F is NN째C."
  
 F = C * 1.8 + 32
 */
