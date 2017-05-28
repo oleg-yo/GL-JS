@@ -1,2 +1,2 @@
 ## GL-JS
-**GlobalLogic Basecamp JavaScript**
+**GlobalLogic Basecamp**
