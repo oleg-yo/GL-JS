@@ -1,0 +1,134 @@
+body {
+	background: #444;
+
+    perspective: 1000px;
+}
+.card {
+	width: 900px;
+	height: 400px;
+	margin: 100px auto 0 auto;
+	position: absolute;
+	left: 0;
+	right: 0;
+
+	background: #fff;
+	border: 4px solid #000;
+	border-radius: 15px;
+
+	text-align: center;
+	font-family: Arial;
+	font-size: 20px;
+	color: #000;
+
+	transform-style: preserve-3d;
+	transform-origin: center center -450px;
+	transition: .6s ease-in-out;
+}
+.card_title {
+	margin: 30px 0 10px 0;
+	font-size: 30px;
+}
+.card_column {
+	width: 30%;
+	height: 300px;
+	float: left;
+	padding: 30px 0 0 0;
+	box-sizing: border-box;
+	position: relative;
+
+	text-align: left;
+	line-height: 30px;
+}
+.card_column:nth-child(4) {
+	width: 40%;
+}
+.card_avatar {
+	width: 150px;
+	height: 150px;
+	display: block;
+	margin: 0 auto 0 auto;
+
+	border: 2px solid #888;
+
+	-webkit-user-select: none;
+}
+.card_buttons {
+	width: 200px;
+	height: 50px;
+	margin: 30px auto 0 auto;
+
+	font-size: 22px;
+
+	-webkit-user-select: none;
+}
+.card_button {
+	width: 50%;
+	height: 100%;
+	float: left;
+
+	background: #eee;
+	border: 3px solid #888;
+	box-sizing: border-box;
+	text-align: center;
+	line-height: 44px;
+
+	cursor: pointer;
+	transition: .1s ease;
+}
+.card_button:hover {
+	background: #bbb;
+	line-height: 47px;
+}
+.card_button:active {
+	background: #aaa;
+}
+.card_button:nth-child(1) {
+	border-radius: 30px 0 0 30px;
+	border-right-width: 2px;
+}
+.card_button:nth-child(2) {
+	border-radius: 0 30px 30px 0;
+	border-left-width: 2px;
+}
+
+
+.loading_bowl {
+	width: 25px;
+	height: 25px;
+	position: absolute;
+	margin: 30px auto 0 auto;
+	left: 0;
+	right: 0;
+}
+.bowl_ringG{
+	position:absolute;
+	width:25px;
+	height:25px;
+	border:2px solid rgb(0,0,0);
+	border-radius:25px;
+}
+.ball_holderG{
+	position:absolute;
+	width:7px;
+	height:25px;
+	left:9px;
+	top:0px;
+	animation:ball_moveG .9s infinite linear;
+}
+.ballG{
+	position:absolute;
+	left:0px;
+	top:-6px;
+	width:10px;
+	height:10px;
+	background:rgb(0,0,0);
+	border-radius:8px;
+}
+@keyframes ball_moveG{
+	0%{
+		transform:rotate(0deg)
+	}
+	100%{
+		transform:rotate(360deg)
+	}
+}
